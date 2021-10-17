@@ -8,17 +8,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
-const mongoose_1 = require("@nestjs/mongoose");
+const typeorm_1 = require("@nestjs/typeorm");
 const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
-const authorization_module_1 = require("./authorization/authorization.module");
-const products_module_1 = require("./products/products.module");
-const global_1 = require("./const/global");
+const main_1 = require("./config/main");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     (0, common_1.Module)({
-        imports: [mongoose_1.MongooseModule.forRoot(global_1.DB_URL), products_module_1.ProductsModule, authorization_module_1.AuthorizationModule],
+        imports: [typeorm_1.TypeOrmModule.forRoot({
+                type: 'mysql',
+                host: main_1.DB_HOST,
+                port: main_1.DB_PORT,
+                username: main_1.DB_USER,
+                password: main_1.DB_PASSWORD,
+                database: main_1.DB_NAME,
+                entities: [],
+                synchronize: true,
+            })],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
     })
