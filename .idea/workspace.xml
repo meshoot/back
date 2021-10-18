@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb10786d-1feb-4ae0-b7f7-df574d05b389" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+    <list default="true" id="cb10786d-1feb-4ae0-b7f7-df574d05b389" name="Changes" comment="исправления кривого переезда гита">
+      <change afterPath="$PROJECT_DIR$/ormconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ormconfig.sample.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/auth/auth.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/auth/controller/auth.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/auth/service/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/users/model/user.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/users/users.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.module.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.module.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tsconfig.build.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tsconfig.build.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/authorization/authorization.controller.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/authorization/authorization.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/authorization/authorization.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/authorization/authorization.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/authorization/dto/create-user.dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/authorization/schemas/user.schema.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/products/dto/create-products.dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/products/dto/update-product-dto.dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/products/products.controller.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/products/products.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/products/products.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/products/products.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/products/schemas/products.schema.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +39,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,10 +61,29 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Projects\nest-rest-api\node_modules\prettier" />
+    <property name="ts.external.directory.path" value="C:\Projects\nest-rest-api\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\nest-rest-api\src\modules\user" />
+      <recent name="C:\Projects\nest-rest-api\src\modules\auth\model" />
+      <recent name="C:\Projects\nest-rest-api\src\modules\auth\service" />
+      <recent name="C:\Projects\nest-rest-api\src\modules\auth\controller" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cb10786d-1feb-4ae0-b7f7-df574d05b389" name="Changes" comment="" />
@@ -38,10 +92,38 @@
       <option name="presentableId" value="Default" />
       <updated>1634226882122</updated>
       <workItem from="1634226883459" duration="707000" />
+      <workItem from="1634478424598" duration="14491000" />
+      <workItem from="1634574312139" duration="6440000" />
     </task>
+    <task id="LOCAL-00001" summary="исправления кривого переезда гита">
+      <created>1634478484099</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1634478484099</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="исправления кривого переезда гита" />
+    <option name="LAST_COMMIT_MESSAGE" value="исправления кривого переезда гита" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1093" y="114" key="CommitChangelistDialog2" timestamp="1634478483051">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1093" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1634478483051" />
+    <state x="655" y="253" width="607" height="536" key="find.popup" timestamp="1634580777970">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="253" width="607" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1634580777970" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1634491846841">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1634491846841" />
   </component>
 </project>
