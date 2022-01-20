@@ -1,36 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb10786d-1feb-4ae0-b7f7-df574d05b389" name="Changes" comment="исправления кривого переезда гита">
-      <change afterPath="$PROJECT_DIR$/ormconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ormconfig.sample.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/auth/auth.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/auth/controller/auth.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/auth/service/auth.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/users/model/user.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/users/users.module.ts" afterDir="false" />
+    <list default="true" id="cb10786d-1feb-4ae0-b7f7-df574d05b389" name="Changes" comment="подключение typeorm">
+      <change afterPath="$PROJECT_DIR$/src/modules/admin/admin.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/admin/model/admin.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/admin/service/admin.repository.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/auth/service/local.strategy.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app.module.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.module.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.module.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app.module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.controller.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.controller.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.module.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.module.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.service.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.service.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/authorizantion.controller.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/authorizantion.controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/authorizantion.controller.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/authorization.controller.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/authorization.controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/authorization.controller.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/authorization.module.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/authorization.module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/authorization.module.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/authorization.service.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/authorization.service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/authorization.service.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/dto/authorizantion.controller.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/dto/authorizantion.controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/dto/authorizantion.controller.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/dto/create-user.dto.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/dto/create-user.dto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/dto/create-user.dto.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/dto/user.dto.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/dto/user.dto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/dto/user.dto.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/schemas/user.schema.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/schemas/user.schema.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/authorization/schemas/user.schema.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/const/global.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/const/global.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/const/global.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/products/dto/create-products.dto.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/products/dto/create-products.dto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/products/dto/create-products.dto.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/products/dto/update-product-dto.dto.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/products/dto/update-product-dto.dto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/products/dto/update-product-dto.dto.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/products/products.controller.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/products/products.controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/products/products.controller.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/products/products.module.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/products/products.module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/products/products.module.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/products/products.service.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/products/products.service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/products/products.service.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/products/schemas/products.schema.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/products/schemas/products.schema.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/products/schemas/products.schema.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/tsconfig.build.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tsconfig.build.tsbuildinfo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/authorization/authorization.controller.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/authorization/authorization.controller.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/authorization/authorization.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/authorization/authorization.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/authorization/dto/create-user.dto.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/authorization/schemas/user.schema.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/products/dto/create-products.dto.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/products/dto/update-product-dto.dto.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/products/products.controller.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/products/products.controller.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/products/products.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/products/products.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/products/schemas/products.schema.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/auth.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/auth/controller/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/controller/auth.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/auth/service/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/service/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/users/model/user.entity.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/users/users.module.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +122,34 @@
       <recent name="C:\Projects\nest-rest-api\src\modules\auth\controller" />
     </key>
   </component>
+  <component name="RunManager" selected="npm.start:dev">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start:dev" />
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -93,7 +163,8 @@
       <updated>1634226882122</updated>
       <workItem from="1634226883459" duration="707000" />
       <workItem from="1634478424598" duration="14491000" />
-      <workItem from="1634574312139" duration="6440000" />
+      <workItem from="1634574312139" duration="6648000" />
+      <workItem from="1642610872221" duration="11130000" />
     </task>
     <task id="LOCAL-00001" summary="исправления кривого переезда гита">
       <created>1634478484099</created>
@@ -102,25 +173,63 @@
       <option name="project" value="LOCAL" />
       <updated>1634478484099</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="подключение typeorm">
+      <created>1634581730851</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1634581730851</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/db/migrations/1642612738160-FooScript.js" />
+        <option value="$PROJECT_DIR$/src/const/global.js" />
+        <option value="$PROJECT_DIR$/src/modules/admin/model/admin.js" />
+        <option value="$PROJECT_DIR$/src/config/main.js" />
+        <option value="$PROJECT_DIR$/src/modules/admin/admin.module.js" />
+        <option value="$PROJECT_DIR$/src/app.module.js" />
+        <option value="$PROJECT_DIR$/src/app.service.js" />
+        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/app.controller.js" />
+        <option value="$PROJECT_DIR$/src/modules/admin/service/admin.repository.js" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="исправления кривого переезда гита" />
-    <option name="LAST_COMMIT_MESSAGE" value="исправления кривого переезда гита" />
+    <MESSAGE value="подключение typeorm" />
+    <option name="LAST_COMMIT_MESSAGE" value="подключение typeorm" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1093" y="114" key="CommitChangelistDialog2" timestamp="1634478483051">
+    <state x="1093" y="114" key="CommitChangelistDialog2" timestamp="1642691097839">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1093" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1634478483051" />
-    <state x="655" y="253" width="607" height="536" key="find.popup" timestamp="1634580777970">
+    <state x="1093" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1642691097839" />
+    <state width="938" height="284" key="GridCell.Tab.0.bottom" timestamp="1642621589830">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="253" width="607" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1634580777970" />
+    <state width="938" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642621589830" />
+    <state width="938" height="284" key="GridCell.Tab.0.center" timestamp="1642621589830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="284" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642621589830" />
+    <state width="938" height="284" key="GridCell.Tab.0.left" timestamp="1642621589830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="284" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642621589830" />
+    <state width="938" height="284" key="GridCell.Tab.0.right" timestamp="1642621589830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="284" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642621589830" />
+    <state x="655" y="253" width="607" height="536" key="find.popup" timestamp="1642622232234">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="253" width="607" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1642622232234" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1634491846841">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

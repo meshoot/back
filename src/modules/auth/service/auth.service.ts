@@ -1,25 +1,20 @@
 import { Injectable } from '@nestjs/common';
-import { InjectRepository } from '@nestjs/typeorm';
-import { Repository } from 'typeorm';
-
-import { User } from '../../users/model/user.entity';
+import Admin from '../../admin/model/admin';
+import AdminRepository from '../../admin/service/admin.repository';
 
 @Injectable()
 export default class AuthService {
-  constructor(
-    @InjectRepository(User)
-    private usersRepository: Repository<User>
-  ) {}
+  constructor(private adminRepository: AdminRepository) {
+  }
 
-  async validateUser(login: string): Promise<User | null> {
-    const user: User = await this.usersRepository.findOne({where: {login}});
+  async validateAdmin(login: string, pass: string): Promise<Admin> | null {
+    const admin = await this.adminRepository.findByLogin(login);
 
-    if (user) {
-      const { password, ...secureUser } = user;
+    if (admin && admin.password === pass) {
+      const { password, ...secureAdmin } = admin;
 
-      return  secureUser;
+      // @ts-ignore
+      return secureAdmin;
     }
-
-    return null;
   }
 }
